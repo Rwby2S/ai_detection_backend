@@ -16,3 +16,23 @@ ai_detection_backend/
 	|	|—utils		#多个模块[子应用]的公共函数类库[自己开发的组件]
 	|_scripts/		#保存项目运行时的脚本文件
 ```
+### 测试环境中需要注意的配置项
+
+#### 数据库配置： 
+
+mysql: 5.7.25版本
+
+数据库名: luffy
+
+用户名和密码在/settings/dev.py 文件中的DATABASES下设置。
+
+#### pycharm中的配置环境（manage)
+
+Parameters: runserver api.luffycity.cn:8000      # 其中 api.luffycity,cn是自己在C盘host文件中设置的   api代表后端域名，www代表前端域名
+
+```
+127.0.0.1  api.luffycity.cn
+127.0.0.1  www.luffycity.cn
+```
+
+
